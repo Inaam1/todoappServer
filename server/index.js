@@ -14,6 +14,10 @@ app.listen(5000, () => {
     console.log("Server Running on port 5000")
 })
 
+app.get('/', (req, res) => {
+    res.send("Welcome to To-Do list Servere.....")
+})
+
 //Add a ToDo Item
 app.post('/add', async (req, res) => {
     try {
